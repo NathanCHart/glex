@@ -3,24 +3,25 @@
 CubeAsset::CubeAsset() {
   // model coordinates, origin at centre.
   GLfloat vertex_buffer [] {
-      -0.5, -0.5, -0.5
-    , -0.5,  0.5, -0.5
-    ,  0.5, -0.5, -0.5
-    ,  0.5,  0.5, -0.5
+      	  -0.5, -0.5, -0.5
+    	, -0.5,  0.5, -0.5
+    	,  0.5, -0.5, -0.5
+    	,  0.5,  0.5, -0.5
 	, -0.5, -0.5,  0.5
 	, -0.5,  0.5,  0.5
 	,  0.5, -0.5,  0.5
 	,  0.5,  0.5,  0.5
   };
 
+ 	//Draw cube via trangles through co-ordinates
   element_buffer_length = 36;
   GLuint element_buffer []  {
         0,1,2, 1,3,2,
-	    4,5,6, 5,7,6,
-		1,5,3, 5,7,3,
-		0,4,2, 4,6,2,
-		0,1,5, 5,4,0,
-		2,3,6, 3,7,6,
+	4,5,6, 5,7,6,
+	1,5,3, 5,7,3,
+	0,4,2, 4,6,2,
+	0,1,5, 5,4,0,
+	2,3,6, 3,7,6,
   };
 
   // Transfer buffers to the GPU

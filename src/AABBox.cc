@@ -1,5 +1,15 @@
 #include "AABBox.h"
 
+
+/*
+ * Base code taken from from the StarshipFontana project last year, scaled up to work in a 3D plane
+ * by changing Vector2 and Point2 to Vector3 and Point 3, adding a z axis and defining the third variable 
+ * as const float depth. After researching on forum posts such as https://www.gamedev.net/topic/606563-should-positions-be-defined-as-ints-or-floats/
+ * I decided to use floats over ints to calculate the width depth and height to to increased precision which is not needed in a 3D space.
+ *    
+ */
+
+
 AABBox::AABBox(const Vector3 centre,
 			     const float width,
 			     const float height,

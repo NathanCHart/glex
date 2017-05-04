@@ -7,6 +7,8 @@
 
 #include "Camera.h"
 
+//create a 4x4 view matrix made up of vec4, return it through teh getViewMatrix function
+
 Camera::Camera() {
 	viewMatrix = glm::mat4(
 	             glm::vec4(1.0, 0.0, 0.0, 0.0),
